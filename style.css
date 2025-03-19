@@ -380,7 +380,6 @@ p .speed{
     .chuteira{
         width: 410px;
         margin-left: 50px;
-        
     }
     #navbar-header{
         padding-left: 8%;
@@ -409,5 +408,10 @@ p .speed{
     }
     .produto-desc{
         font-size: 10px;
+    }
+}
+@media(max-width:500px){
+    .chuteira{
+        margin: 0;
     }
 }
