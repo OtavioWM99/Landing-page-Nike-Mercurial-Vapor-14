@@ -10,37 +10,34 @@
 body{
     height: 100vh;
     background-image: url(img/fundo.png);
-    background-position: 1vw;
+    background-position: 2vw;
     background-size: 147%; 
     background-repeat: no-repeat;
 }
-.container-header{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 9%;
-    padding-right: 5%;
-    padding-top: 2%;
-    width: 100%;
+
+
+
+#navbar-header{
+    padding-left: 8%;
+    padding-right: 8%;
 }
+ 
+
 .nike{
     width: 25vh;
     cursor: pointer;
 }
 li{
-    display: inline;
-    justify-content: space-between;
-    list-style: none;
     margin: 0 30px;
     font-size: 20px;
     font-weight: 600;
+    color: #000000;
 }
 
-.container-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
+#container-main{
+    margin-top: 150px;
 }
+
 h1{
     font-weight: 800;
     letter-spacing: .1em;
@@ -60,8 +57,8 @@ p .speed{
     color: #abe211;
     font-weight: 800;
 }
-.chuteira{
-    max-width: 90%; 
+#chuteira1{
+    width: 700px;
     height: auto;
     transform: rotate(-25deg); 
     margin-top: -90px;
@@ -298,3 +295,224 @@ p .speed{
     grid-column: span 2;
     margin-bottom: 10px;
 }
+
+
+@media (max-width: 1800px) {
+    body {
+        background-size: 155%; 
+    }
+}
+@media (max-width: 1630px) {
+    body {
+        background-size: 160%; 
+    }
+}
+@media (max-width: 1545px) {
+    body {
+        background-size: 165%; 
+    }
+    .chuteira{
+        width: 600px;
+    }
+}
+@media(max-width:1470px){
+    body{
+        background-size: 180%;
+        background-position: -5vw;
+    }
+    .chuteira{
+        width: 550px;
+    }
+}
+@media(max-width:1340px){
+    body{
+        background-size: 185%;
+    }
+}
+@media(max-width:1265px){
+    body{
+        background-size: 190%;
+        background-position: -4vw;
+    }
+}
+
+@media (max-width: 1200px) {
+    body{
+        background-size: 205%;
+        background-position: -5vw;
+    }
+    .nike{
+        width: 20vh;
+    }
+    .chuteira{
+        width: 450px;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .btn{
+        width: 200px;
+        height: 60px;
+        border-radius: 25px;
+        font-weight: 800;
+        margin-left: 10px;
+        margin-top: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .produto-categoria{
+        font-size: 27px;
+    }
+    .produto-card{
+        width: 220px;
+    }
+    .produto-marca{
+        font-size: 28px;
+    }
+    .produto-desc{
+        font-size: 14px;
+    }
+    
+}
+@media(max-width:991px){
+    body{
+        background-size: 0; 
+    }
+    .chuteira{
+        width: 410px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
+    #navbar-header{
+        padding-left: 8%;
+        padding-right: 8%;  
+        background-color: #d5ff62;
+    }
+    .produto-categoria{
+        margin: 30px 0 0 0;
+    }
+
+}
+@media(max-width:767px){
+    .chuteira{
+        width: 350px;
+    }
+}
+@media(max-width:610px){
+    .produto-categoria{
+        font-size: 27px;
+    }
+    .produto-card{
+        width: 180px;
+    }
+    .produto-marca{
+        font-size: 22px;
+    }
+    .produto-desc{
+        font-size: 10px;
+    }
+}
+
+
+    /*.produto-card{
+        flex: 0 0 auto;
+        width: 250px;
+        margin-right: 40px;
+        background-color: #f1f0f0;
+        border-radius: 16px;
+        padding: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .produto-card:hover{
+    cursor: pointer;
+    background-color: #3d3d3d;
+    color: #fff;
+    border-radius: 26px;
+    padding: 8px;
+    transform: scale(1.1);
+    z-index: 10;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.produto-img{
+    position: relative;
+    width: 100%;
+    height: 170px;
+}
+
+.produto-thumb{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tag-desconto{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+    border-radius: 16px;
+}
+
+.produto-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: rgb(255, 255, 255);
+    color: #000000;
+}
+
+.produto-info{
+    width: 100%;
+    padding-top: 10px;
+}
+
+.produto-marca{
+    text-transform: uppercase;
+}
+
+.produto-desc{
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.preco{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.preco-atual{
+    margin-left: 20px;  
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+    */

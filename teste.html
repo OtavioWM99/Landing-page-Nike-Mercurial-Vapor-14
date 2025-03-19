@@ -8,41 +8,73 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-shape"></div>
     <div class="container-header">
-        <img src="img/logo-nike.svg" alt="nike" class="nike">
-        <nav>
-            <ul">
-                <li>INÍCIO</li>
-                <li>EM DESTAQUE</li>
-                <li>PRODUTO</li>
-                <li>EXPLORAR</li>
-                <li>ENTRE EM CONTATO</li>
+        <nav class="navbar navbar-expand-xl">
+    <div class="container-fluid" id="navbar-header">
+        <a class="navbar-brand" href="#"><img src="img/logo-nike.svg" alt="nike" class="nike"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">INÍCIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">EM DESTAQUE</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">PRODUTO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">EXPLORAR</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">ENTRE EM CONTATO</a></li>
             </ul>
-        </nav>
+        </div>
+    </div>
+</nav>
     </div>
 
-
-
-    <div class="container-main">
-        <div class="container text-center">
-            <div class="row align-items-center">
-              <div class="col">
-                <h1>NIKE <span class="vapor">VAPOR 14</span></h1>
-                <p> Acelere seu jogo com a Nike Mercurial Vapor 14, projetada para velocidade máxima. <span class="speed">Engineered for Speed,</span>ela combina inovação e design avançado para garantir explosão, 
-                    agilidade e controle. Prepare-se para levar sua performance ao próximo nível e dominar o campo com a chuteira feita para quem busca velocidade em cada jogada!</p>
-                <button type="button" class="btn">COMPRE AGORA</button>
-                <img src="img/insta.png" class="insta">  
-                <img src="img/x.png" alt="x" class="x">
-                <img src="img/face.png" alt="face" class="face">
-
+    <div class="container" id="container-main">
+      <div class="container text-center">
+          <div class="row align-items-center">
+              <!-- Column 1 -->
+              <div class="col-lg-6 col-md-12" id="col-1">
+                  <h1>NIKE <span class="vapor">VAPOR 14</span></h1>
+                  <p>Acelere seu jogo com a Nike Mercurial Vapor 14, projetada para velocidade máxima. <span class="speed">Engineered for Speed,</span> ela combina inovação e design avançado para garantir explosão, agilidade e controle. Prepare-se para levar sua performance ao próximo nível e dominar o campo com a chuteira feita para quem busca velocidade em cada jogada!</p>
+                  
+                  <!-- Chuteira visível apenas em telas menores que 990px -->
+                  <img src="img/chuteira1.png" alt="chuteira" class="chuteira img-fluid d-lg-none">
+  
+                  <button type="button" class="btn">COMPRE AGORA</button>
+                  
+                  <img src="img/insta.png" class="insta">
+                  <img src="img/x.png" alt="x" class="x">
+                  <img src="img/face.png" alt="face" class="face">
               </div>
-              <div class="col">
-                <img src="img/chuteira1.png" alt="" class="chuteira">
+  
+              <!-- Column 2: Some automaticamente em telas menores que 990px -->
+              <div class="col-lg-6 d-none d-lg-block" id="col-2">
+                  <img src="img/chuteira1.png" alt="chuteira" class="img-fluid" id="chuteira1">
               </div>
-            </div>
           </div>
-    </div>
+      </div>
+  </div>
+  
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
     
     <section class="produto">
         <h2 class="produto-categoria">Mais vendidos</h2>
@@ -156,6 +188,7 @@
           </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js.js"></script>
 </body>
 </html>
